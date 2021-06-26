@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .calculator {
+    @include grid(4, 2rem);
+    grid-template-rows: 16rem repeat(5, 7.5rem);
+    background-color: $very-dark-blue2;
+    padding: 1.5rem;
+
+    button {
+      cursor: pointer;
+      border-radius: 1rem;
+      border: none;
+     
+      box-shadow: 5px 5px 10px -3px #00000040,-5px -5px 15px 3px #00ffc11f;
+      outline: none;
+      &:active{
+          background-color: $grayish-orange;
+      }
+    }
+    .number{
+        background-color: $wite;
+    }
+    .del{
+        background-color: $key-dark-blue;
+    }
+
+  }
+
+  .col-2{
+      grid-column: -5/-3;
+      background-color: $key-dark-blue;
+  }
+  .col-1{
+    grid-column: -3/-1;
+    background-color: $red;
+}
+.display{
+    grid-column: 1/-1;
+    display: flex;
+    margin: 1rem 1rem 2rem;
+    padding: 1.6rem;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: $vary-dark-blue3;
+    border-radius: 1rem;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    #currently-value{
+        font-size: 3.2rem;
+        color: $wite;
+    }
+    #previous-value{
+       
+        color: $wite;
+    }
+   
+}
+}
+

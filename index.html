@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./SCSS/app.css" />
+    <script src="./JS/Display.js" type="text/javascript"></script>
+    <script src="./JS/Calculator.js" type="text/javascript"></script>
+    <script src="./JS/main.js" type="text/javascript" defer></script>
+    <title>Calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="display">
+          <div id="previous-value"></div>
+          <div id="currently-value"></div>
+        </div>
+
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="del" onclick="display.deleteNumber()">DEL</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator" value="sumar">+</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="operator" value="restar">-</button>
+        <button class="number">.</button>
+        <button class="number">0</button>
+        <button class="operator" value="dividir">/</button>
+        <button class="operator" value="multiplicar">X</button>
+        <button class="col-2" onclick="display.deleteAll()">RESET</button>
+        <button class="operator col-1" value="igual">=</button>
+      </div>
+    </div>
+
+    <!-- <script src="./Js/Display.js"></script>
+    <script src="./Js/Calculator.js"></script>
+    <script src="./JS/main.js"></script>
+   -->
+  </body>
+</html>
